@@ -24,7 +24,7 @@ function App() {
             <Route exact path='/login' element={<Login />} />
             <Route exact path='/createuser' element={<Signup />} />
             <Route exact path="/myorder" element={<MyOrder />} />
-          </Routes>
+          </Routes> 
         </div> 
       </Router >
     </CartProvider>
