@@ -1,5 +1,6 @@
 import React from 'react'
 import { useCart, useDispatchCart } from '../components/ContextReducer'
+import {AiOutlineDelete} from 'react-icons/ai'
 
 export default function Cart() {
     let data = useCart();
@@ -58,8 +59,7 @@ export default function Cart() {
                                 <td>{food.qty}</td>
                                 <td>{food.size}</td>
                                 <td>{food.price}</td>
-                                <td><button type='button' className='btn p-0'>
-                                    <img alt='delete' onClick={() => { dispatch({ type: "REMOVE", index: index }) }} /></button></td>
+                                <td><AiOutlineDelete type='button' className='btn p-0' onClick={() => { dispatch({ type: "REMOVE", index: index }) }} /></td>
                             </tr>
                         ))}
                     </tbody>
